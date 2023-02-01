@@ -1,0 +1,331 @@
+.input_create{
+    float: right;
+}
+
+.contenedor_create{
+    width: 60%;
+    margin-left: 15%;
+    /* top: 80vh !important; */
+    max-width: 1140px;
+    max-height: 640px;
+    padding: 6rem 4rem;
+    display: grid;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    background: rgba(255, 255, 255, 0.849);
+    box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    backdrop-filter: blur(6px);
+  
+    grid-template-areas:  "title title title"
+                          "texto texto dietas"
+                          "numeros numeros dietas"
+                          "summary summary summary"
+                          "submit submit submit";
+}
+
+.h1_create{
+    margin-bottom: 5%;
+    width: 100%;
+    grid-area: title;
+}
+
+.contenedor_all{
+background-image: url("../styles/comida.png");
+height: 90vh;
+transform: rotate(50%);
+}
+.form{
+    margin-left: 20%;
+  }
+  
+
+.create_btns{
+    width: 100%;
+    max-width: 30rem;
+    display: flex;
+    grid-area: submit;
+  }
+  
+  .create_btn {
+    margin-left: 30%;
+    width: 30%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: transform 150ms ease;
+    background: #a1ebc8;
+    color: var(--dark-color);
+    border: none;
+  }
+
+  .create_btn2 {
+    margin-left: 2%;
+    width: 30%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: transform 150ms ease;
+    background: transparent;
+    color: var(--dark-color);
+    border: 1px solid black;
+  }
+  
+  .create_btn:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  .create_btn2:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+/*----------------------------errores----------------------------------------------*/
+.errores{
+    background-color: rgb(233, 68, 68);
+    color: white; 
+    position:absolute;
+    transform: translateY(-10px);
+}
+
+.check{
+  position: absolute;
+}
+
+.c_dish{
+  top: 32%;
+  left: 85%
+}
+
+.c_steps{
+  top: 43%;
+  left: 32%
+}
+/* ---------------------------------------DIETAS--------------------------------------------------------------------------- */
+
+
+  @media (max-width: 767px) { 
+  
+    .nav-item_create:after{
+      display: none;
+    }
+    .nav-item_create::before {
+      position: absolute;
+      display: block;
+      top: 15px;
+      left: 0;
+      width: 11px;
+      height: 1px;
+      content: "";
+      border: none;
+      background-color: #000;
+      /* vertical-align: 0; */
+    }}
+  
+    .dropdown-menu_create {
+    padding: 0;
+    margin: 0;
+    transition: all 200ms linear;
+    position: fixed;
+    width: 150px;
+    height: 52%;
+    animation-name: animacion;
+    animation-duration: .3s;
+    display: block;
+    z-index: 4000466604;
+  }
+  
+  
+  @keyframes animacion{
+    from{
+      transform: translate3d(0, 10px, 0);
+      opacity: 0;
+    }
+    to{
+    transform: translate3d(0, 0px, 0);
+      opacity: 1;
+    }
+  }
+  
+  .dropdown-menu_create {
+    top: 25%;
+    padding: 10px!important;
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #212121;
+    background-color: #fcfaff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+    transition: all 200ms linear;
+  }
+  
+  
+  .dropdown-item_create {
+    padding: 3px 15px;
+    color: #212121;
+    border-radius: 2px;
+    transition: all 200ms linear;
+    white-space: nowrap;
+    clear: both;
+    text-align: inherit;
+    display: block;
+    cursor: pointer;
+  }
+  .dropdown-item_create:hover, 
+  .dropdown-item_create:focus {
+    color: #fff;
+    background-color: #82dfb3;
+  }
+  
+  .navbar-nav_create{
+    margin-left: 2%;
+  }
+  .nav-item_create{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+  /* ----------------------------------------------------------------------------------------------------------- */
+  :focus{outline: none;}
+
+  .col-3{
+    float: left; 
+    width: 27.33%; 
+    margin: 20px 3%; 
+    position: relative;
+  } /* necessary to give position: relative to parent. */
+
+
+  .effect-21{
+    font: 15px/24px "Lato", Arial, sans-serif; 
+    color: #333; 
+    width: 100%; 
+    box-sizing: border-box; 
+    letter-spacing: 1px;
+
+  }
+
+.effect-21 ~ .focus-border:before,
+.effect-21 ~ .focus-border:after{
+  content: ""; 
+  position: absolute; 
+  top: 0; right: 0; width: 0; 
+  height: 2px; 
+  background-color: #3399FF; 
+  transition: 0.2s; 
+  transition-delay: 0.2s;
+
+}
+.effect-21 ~ .focus-border:after{
+  top: auto; 
+  bottom: 0; right: auto; left: 0; transition-delay: 0.6s;
+}
+.effect-21 ~ .focus-border i:before,
+.effect-21 ~ .focus-border i:after{
+  content: ""; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  width: 2px; 
+  height: 0; 
+  background-color: #3399FF; 
+  transition: 0.2s;
+  
+}
+.effect-21 ~ .focus-border i:after{
+  left: auto; 
+  right: 0; 
+  top: auto; 
+  bottom: 0; 
+  transition-delay: 0.4s;
+}
+.effect-21:focus ~ .focus-border:before,
+.effect-21:focus ~ .focus-border:after,
+.has-content.effect-21 ~ .focus-border:before,
+.has-content.effect-21 ~ .focus-border:after{
+  width: 100%; 
+  transition: 0.2s; 
+  transition-delay: 0.6s;
+}
+.effect-21:focus ~ .focus-border:after,
+.has-content.effect-21 ~ .focus-border:after{
+  transition-delay: 0.2s;
+}
+
+.effect-21:focus ~ .focus-border i:before,
+.effect-21:focus ~ .focus-border i:after,
+.has-content.effect-21 ~ .focus-border i:before,
+.has-content.effect-21 ~ .focus-border i:after{
+  height: 100%; 
+  transition: 0.2s;
+}
+.effect-21:focus ~ .focus-border i:after,
+.has-conten.effect-21 ~ .focus-border i:after{
+  transition-delay: 0.4s;
+}
+.effect_label{
+  position: absolute; 
+  left: -30px; 
+  width: 100%; 
+  top: 3px; 
+  color: rgba(20, 20, 20, 0.562); 
+  transition: 0.3s; 
+  z-index: -1; 
+  letter-spacing: 0.5px;
+}
+.effect-21:focus ~ label, .has-content.effect-21 ~ label{
+  top: -18px; 
+  left: -60px; 
+  font-size: 12px; 
+  color: #3399FF; 
+  transition: 0.3s;
+}
+
+.clickLabel{
+  top: -18px; 
+  left: -60px; 
+  position: absolute; 
+  width: 100%; 
+  color: rgba(20, 20, 20, 0.562); 
+  transition: 0.3s; 
+  z-index: -1; 
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+
+.effect-21{
+  background-color: transparent;
+  border: 1px solid rgba(20, 20, 20, 0.562);
+}
+
+.texto{
+  grid-area: texto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.numeros{
+  grid-area: numeros;
+  
+}
+
+.summary{
+  grid-area: summary;
+}
+
+.contenedor_select_dietas{
+  grid-area: dietas;
+
+}

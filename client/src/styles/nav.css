@@ -1,0 +1,202 @@
+.Nav{
+    width: 100%;
+    height: 11vh;
+    /* position: fixed; */
+
+}
+
+.collapse {
+  margin-top: 2%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #212112;
+    /* background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat-back.svg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 7%; */
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: all 200ms linear;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 11%
+  }
+  ::selection {
+    color: #3bb77e;
+    background-color: #3bb77e;
+  }
+  ::-moz-selection {
+    color: #3bb77e;
+    background-color: #3bb77e;
+  }
+  
+  .nav-link{
+    color: #212121;
+    font-weight: 500;
+      transition: all 200ms linear;
+      text-decoration: none;
+  }
+  .nav-item:hover .nav-link{
+    color: #3bb77e !important;
+    list-style: none;
+  }
+  .nav-item.active .nav-link{
+    color: #777 ;
+    list-style: none;
+  
+  }
+  .nav-link {
+    position: relative;
+    padding: 5px 0 ;
+    display: inline-block;
+  }
+  /*---------------------------------------NAV ITEM-------------------------------------------------------------*/
+  .nav-item:after{
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    content: '';
+    background-color: #3bb77e;
+    opacity: 0;
+    transition: all 200ms linear;
+    list-style: none;
+    color: #777 ;
+  
+  }
+  .nav-item:hover:after{
+    bottom: 0;
+    opacity: 1;
+    list-style: none;
+  
+  }
+  .nav-item.active:hover:after{
+    opacity: 0;
+  }
+  .nav-item{
+    position: relative;
+    transition: all 200ms linear;
+    list-style: none;
+    color: #000 ;
+    font-weight: 15px;
+  }
+  
+  #navbarSupportedContent{
+    display: flex;
+  }
+  
+  
+  @media (max-width: 767px) { 
+  
+    .nav-item:after{
+      display: none;
+    }
+    .nav-item::before {
+      position: absolute;
+      display: block;
+      top: 15px;
+      left: 0;
+      width: 11px;
+      height: 1px;
+      content: "";
+      border: none;
+      background-color: #000;
+      /* vertical-align: 0; */
+    }
+  
+  }
+  
+   .dropdown-menu {
+    padding: 0;
+    margin: 0;
+    transition: all 200ms linear;
+    position: fixed;
+    width: 150px;
+    height: 52%;
+    animation-name: animacion;
+    animation-duration: .3s;
+    display: block;
+    z-index: 4000466604;
+  }
+  
+  .menu{
+      display: none !important;
+  } 
+  
+  @keyframes animacion{
+    from{
+      transform: translate3d(0, 10px, 0);
+      opacity: 0;
+    }
+    to{
+    transform: translate3d(0, 0px, 0);
+      opacity: 1;
+    }
+  }
+  
+  .dropdown-menu {
+    padding: 10px!important;
+    margin: 0;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: #212121;
+    background-color: #fcfaff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+    transition: all 200ms linear;
+  }
+  
+  
+  .dropdown-item {
+    padding: 3px 15px;
+    color: #212121;
+    border-radius: 2px;
+    transition: all 200ms linear;
+    white-space: nowrap;
+    clear: both;
+    text-align: inherit;
+    display: block;
+    cursor: pointer;
+  }
+  .dropdown-item:hover, 
+  .dropdown-item:focus {
+    color: #fff;
+    background-color: #3bb77e;
+  }
+  
+  .navbar-nav{
+    margin-left: 2%;
+  }
+
+/* --------------------------------------------------------------------------------------------------- */
+
+.dropdown-menu2 {
+  padding: 10px!important;
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #212121;
+  background-color: #fcfaff;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+  transition: all 200ms linear;
+}
+
+ 
+.dropdown-menu2 {
+  padding: 0;
+  margin: 0;
+  transition: all 200ms linear;
+  position: fixed;
+  width: 150px;
+  height: 12%;
+  animation-name: animacion;
+  animation-duration: .3s;
+  display: block;
+  z-index: 4000466604;
+}

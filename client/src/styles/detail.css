@@ -1,0 +1,63 @@
+
+
+.contieneDetail{
+    display:grid;
+    grid-template-areas: 
+    "summary title steps"
+    "summary diets steps"
+    "summary img   steps"
+    "summary dishtypes  steps"
+    "summary healthScore steps";
+    grid-template-columns: 30%;
+    grid-template-rows: 5% 10%;
+    background-color: rgb(255, 250, 243);
+}
+
+.detail_summary{
+    width: 300px;
+    grid-area: summary;
+    margin-left: 10%;
+    background-color: antiquewhite;
+
+}
+
+.detail_img{
+    width: 350px;
+    height: 250px;
+    grid-area: img;
+    margin-left: 15%;
+}
+
+.detail_steps{
+    width: 300px;
+    grid-area: steps;
+}
+
+.detail_steps_parrafo{
+    margin: 3%;
+    background-color: antiquewhite;
+}
+
+.detail_dish{
+    width: 100px;
+    grid-area: dishtypes;
+    margin-left: 5%;
+}
+
+.detail_dish_parrafo{
+    margin: 2%;
+    background-color: antiquewhite;
+}
+
+.detail_title{
+    grid-area: title;
+}
+
+.detail_diets{
+    grid-area: diets;
+
+}
+
+.detail_healthScore{
+    grid-area: healthScore ;
+}
